@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css?version=2" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Michroma"
+      rel="stylesheet"
+    />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img//favicon-16x16.png">
+   
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav_checkbox">
+          <img src="" class="" width="30" />
+          <img src="./img/logoMain.jpg" class="headerLogo"/>
+          <input type="checkbox" id="tab-nav" class="tab-nav" />
+
+          <label for="tab-nav" class="label">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </label>
+
+          <ul class="content_nav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <button class="btn">Book Now</button>
+
+        </nav>
+      </div>
+    </header>
+
+    <!-- <section class="content_section">
+      <div class="container2">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <!-- <div class="item item-6">6</div>
+            <div class="item item-7">7</div> -->
+        <!-- <div class="item item-8">8</div>
+            <div class="item item-9">9</div> -->
+      <!-- </div>
+    </section> -->
+  </body>
+</html>
+<script>
+  document.querySelectorAll(".content_nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("tab-nav").checked = false;
+    });
+  });
+</script>
